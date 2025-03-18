@@ -1,0 +1,1 @@
+This is a Simple React Application developed for Laptop Round of the Event Named " Treasure Hunt " , Organised by Mathematics and Statistics Asscoiation of Pillai college of Arts,commerce and Science. Everytime we click on Start Quiz, New or unique Quiz will be Displayed Each Time, Questions with options are stored in the object in the code only.
