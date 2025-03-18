@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pirata+One&display=swap');
+.App {
+  background: url("../src/assets/main-bg.jpg") no-repeat center top;
+  background-size: cover; /* Scales the image to cover the container while maintaining aspect ratio */
+  color: #ffd700; /* Yellow text */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  height: auto; 
+}
+
+.header
+{
+  margin-top: 30px;
+  font-size: 18px;
+}
+.head-text
+{
+  font-family: 'Patrick Hand', cursive; /* Handwritten treasure map style */
+    font-size: 1.5rem;
+    color: #4B3E2A; /* Rich brown */
+    text-shadow: 2px 2px 4px #00000050; /* Subtle depth */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.text-head
+{
+  margin-top: -30px;
+}
+.text1
+{
+  font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    color: #4B3E2A;
+    text-shadow: 1px 1px 3px #00000050;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.text2
+{
+  font-family: 'Pirata One', cursive; /* Bold pirate font for emphasis */
+    font-size: 3.5rem;
+    color: #8B4513; /* Dark brown for an aged map look */
+    text-shadow: 4px 4px 6px #00000050, 0 0 10px #FFF8DC;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  margin-top: -20px;
+  
+}
+.logo {
+  height: 80px;
+  border-radius: 70px;
+  margin-top: -90px;
+}
+.body-bg
+{
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 20px;
+  position: relative;
+}
+.body-bg2
+{
+  border-radius: 70px;
+  margin-top: 70px;
+  position: relative;
+  filter:drop-shadow(1px 2px 15px white)
+  
+}
+
+
+.text-input
+{
+  height:40px;
+  width: 500px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.all-Q
+{
+  margin-top:-10px;
+  font-size: 15px;
+}
+.correct-answer h3
+{
+  font-size: 30px;
+}
+.correct-answer p
+{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.incorrect-answer h3
+{
+  font-size: 30px;
+}
+.incorrect-answer p
+{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.correct-answer .correct-icon
+{
+  margin-top: 30px;
+}
+.try-again-button
+{
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s
+}
+
+
+
+
+.result
+{
+  margin-top: -250px;
+}
+
+.question-section {
+  padding: 20px;
+  text-align: center;
+  margin-top: -200px;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  height:500px;
+  padding: 150px;
+}
+.question-image
+{
+  height: 120px;
+  width:120px;
+}
+.options label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.currentQ {
+  color: white;
+}
+
+
+.correct-icon,
+.incorrect-icon {
+  color: green;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.incorrect-answer .incorrect-icon {
+  color: red;
+}
+
+
+
+.start-button {
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  height: 60px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10; /* Ensuring buttons are clickable */
+  position: relative; /* Maintain natural flow */
+}
+.submit-button
+{
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  padding: 20px 40px;
+  font-size: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10; /* Ensuring buttons are clickable */
+  position: relative; /* Maintain natural flow */
+}
+.options {
+  display: flex;
+  flex-direction: column; /* Ensures options are displayed vertically */
+  align-items: center; /* Centers the options */
+  gap: 10px; /* Adds spacing between options */
+  margin-top: 20px; /* Adds some space between the question and options */
+  color:white
+}
+.back-button
+{
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10; /* Ensuring buttons are clickable */
+  position: relative; /* Maintain natural flow */
+}
+.try-again-button
+{
+  background-color: #ffd700;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10; /* Ensuring buttons are clickable */
+  position: relative; /* Maintain natural flow */
+}
+
+
+.start-button:hover,
+.submit-button:hover,
+.back-button:hover,
+.try-again-button:hover {
+  background-color: #e5c100;
+}
+
+.correct-text
+{
+  margin-top: -300px;
+  background:url('../src/assets/paper.jpg');
+  backdrop-filter: blur(100px);
+  height:400px;
+}
+.correct-text h3
+{
+  color:green
+}
+.incorrect-text
+{
+  margin-top: -300px;
+  background:url('../src/assets/paper.jpg');
+  backdrop-filter: blur(100px);
+  height:400px
+}
+.incorrect-text h3
+{
+  color: red;
+}
+
+.next-clue-text
+{
+  color:white;
+  text-shadow: 
+        -5px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}
+
